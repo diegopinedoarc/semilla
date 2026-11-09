@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualidad | SEMILLA</title>
+  <meta name="description" content="Notas, normativa y novedades ambientales explicadas con claridad: leyes, sostenibilidad, medio ambiente y empresas e impacto.">
+  <meta property="og:title" content="Actualidad | SEMILLA">
+  <meta property="og:description" content="Notas y novedades ambientales con rigor y lenguaje claro.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta name="theme-color" content="#0f241b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="actualidad">
+  <div id="site-header-slot"></div>
+
+  <main id="contenido">
+    <section class="hero hero--short" style="background:linear-gradient(180deg,rgba(10,26,19,.4),rgba(10,26,19,.85)),url('img/actualidad.jpg') center/cover no-repeat,radial-gradient(120% 90% at 20% 0%,#2d6350 0%,#0f241b 75%)">
+      <div class="wrap">
+        <span class="eyebrow">Actualidad</span>
+        <h1>Lo que pasa, explicado con criterio.</h1>
+        <p class="lead" style="max-width:640px;font-size:1.2rem;opacity:.9">Normativa, sostenibilidad y novedades ambientales en lenguaje claro y con fuentes.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:60px">
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="Buscar notas" aria-label="Buscar notas">
+          </label>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem;margin-bottom:22px" id="count" aria-live="polite"></p>
+
+        <div id="featured"></div>
+        <div class="grid-3" id="grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="suscribite" style="padding:80px 0">
+      <div class="wrap" style="max-width:760px;text-align:center">
+        <span class="eyebrow">Newsletter</span>
+        <h2>No te pierdas la próxima nota.</h2>
+        <form class="form" data-newsletter novalidate style="margin-top:24px">
+          <div class="row">
+            <input type="email" name="email" placeholder="Tu email" required aria-label="Tu email" autocomplete="email">
+            <button class="btn" type="submit">Suscribirme</button>
+          </div>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/actualidad.js"></script>
+</body>
+</html>

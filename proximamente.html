@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Próximamente | SEMILLA</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0f241b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="">
+  <div id="site-header-slot"></div>
+
+  <main id="contenido">
+    <section class="hero" style="min-height:80vh;align-items:center;padding-bottom:60px">
+      <div class="wrap">
+        <div class="hero__inner">
+          <span class="eyebrow">En construcción</span>
+          <h1 id="title">Próximamente</h1>
+          <p class="lead">Estamos preparando esta sección. Mientras tanto, podés leer las últimas notas o dejarnos tu email.</p>
+          <div class="hero__cta">
+            <a class="btn" href="actualidad.html">Ir a Actualidad</a>
+            <a class="btn btn--ghost" href="index.html">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const T = {
+        campanas: "Campañas", casos: "Casos y entrevistas", datos: "Datos e investigación",
+        tendencias: "Tendencias y alianzas", empresas: "Empresas", ongs: "ONGs",
+        profesionales: "Profesionales", estudiantes: "Estudiantes", b2b: "Sector B2B",
+        recursos: "Recursos", actividades: "Talleres y webinars",
+        terminos: "Términos y condiciones", privacidad: "Política de privacidad"
+      };
+      const s = new URLSearchParams(location.search).get("s");
+      if (T[s]) { document.getElementById("title").textContent = T[s]; document.title = T[s] + " | SEMILLA"; }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Fotos del sitio (opcionales). Si el archivo no existe, se ve un fondo verde de respaldo.
+
+hero.jpg         -> fondo del inicio (horizontal, mínimo 1920x1080, idealmente < 400 KB)
+aprende.jpg      -> fondo de la sección "Aprendé para aplicar"
+actualidad.jpg   -> cabecera de la página Actualidad
+articulos/       -> imágenes de cada nota (en data.js: imagen: "img/articulos/nombre.jpg")
+
+Consejo: comprimí las fotos (squoosh.app) y usá .jpg o .webp.

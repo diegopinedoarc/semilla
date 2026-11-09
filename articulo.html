@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nota | SEMILLA</title>
+  <meta name="description" content="Nota de Actualidad de SEMILLA.">
+  <meta name="theme-color" content="#0f241b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="actualidad">
+  <div id="site-header-slot"></div>
+
+  <main id="contenido">
+    <section class="article-head"><div class="wrap" id="a-head"></div></section>
+
+    <article class="article-body">
+      <div class="wrap">
+        <div id="a-body"></div>
+        <div class="article-nav">
+          <a class="btn btn--dark" href="actualidad.html">← Volver a Actualidad</a>
+          <button class="btn btn--ghost" id="copy" style="color:var(--green-800);border-color:var(--green-800)">Copiar enlace</button>
+        </div>
+      </div>
+    </article>
+
+    <section class="section section--sand" style="padding:70px 0">
+      <div class="wrap">
+        <div class="section__head"><span class="eyebrow" style="color:var(--gold-dark)">Seguí leyendo</span><h2 style="margin:0">Otras notas</h2></div>
+        <div class="grid-3" id="related"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/articulo.js"></script>
+</body>
+</html>
